@@ -1,0 +1,10 @@
+employee;
+12312;12;4;1234;12;12;12;
+test;12312;1;vardastest;pavardetest;telnrtest;emailtest;
+2;3;16;4;5;6;7;
+;;123;;;;;
+category;
+testprisijungimas1;testslaptazodis1;111;testpav1;testadr1;testtel1;testpav1;testemail1;
+23;3;1;4;5;8;67;9;
+12323;3;1;4;5;7;6;8;
+5;6;1;7;8;1;9;2;

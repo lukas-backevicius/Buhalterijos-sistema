@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ExpenseController">
+    <children>
+        <Button layoutX="357.0" layoutY="394.0" mnemonicParsing="false" onAction="#backToMain" prefHeight="17.0" prefWidth="211.0" text="Go Back to Main Screen" />
+        <VBox layoutX="26.0" layoutY="19.0" prefHeight="350.0" prefWidth="542.0" spacing="10.0">
+            <children>
+                <Label text="Expenses">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                </Label>
+                <TableView fx:id="expensesTable" prefHeight="157.0" prefWidth="542.0">
+                    <columns>
+                        <TableColumn fx:id="idCol" onEditCommit="#changeIdCellEvent" prefWidth="47.0" text="ID" />
+                        <TableColumn fx:id="categoryIdCol" onEditCommit="#changeCategoryIdCellEvent" prefWidth="83.0" text="Category ID" />
+                        <TableColumn fx:id="howAcquiredCol" onEditCommit="#changeHowAcquiredCellEvent" prefWidth="75.0" text="How Acquired" />
+                        <TableColumn fx:id="amountCol" minWidth="0.0" onEditCommit="#changeAmountCellEvent" prefWidth="84.0" text="Amount" />
+                    </columns>
+                </TableView>
+                <FlowPane prefHeight="80.0" prefWidth="542.0">
+                    <children>
+                        <TextField fx:id="idField" prefHeight="25.0" prefWidth="180.0" promptText="ID" />
+                        <TextField fx:id="categoryIdField" prefHeight="25.0" prefWidth="180.0" promptText="Category ID" />
+                        <TextField fx:id="howAcquiredField" prefHeight="25.0" prefWidth="180.0" promptText="How Acquired" />
+                        <TextField fx:id="amountField" prefHeight="25.0" prefWidth="180.0" promptText="Amount" />
+                    </children>
+                </FlowPane>
+                <HBox prefHeight="0.0" prefWidth="542.0" spacing="10.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#addExpense" prefWidth="175.0" text="Add New Expense" />
+                        <Button mnemonicParsing="false" onAction="#deleteExpense" prefWidth="175.0" text="Delete Expense" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <Button fx:id="loadButton" layoutX="26.0" layoutY="394.0" mnemonicParsing="false" onAction="#loadData" text="Load data" />
+    </children>
+</AnchorPane>

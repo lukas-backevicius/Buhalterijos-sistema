@@ -1,0 +1,6 @@
+employee;
+1;test;101;vardastest;pavardetest;telnrtest;emailtest;
+2;test1;102;vardastest1;pavardetest1;telnrtest1;emailtest1;
+company;
+110;testprisijungimas;testslaptazodis;testpav;testadr;testtel;testpav;testemail;
+111;testprisijungimas1;testslaptazodis1;testpav1;testadr1;testtel1;testpav1;testemail1;
