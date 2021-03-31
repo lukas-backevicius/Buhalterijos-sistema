@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CategoryController">
+    <children>
+        <Button layoutX="357.0" layoutY="394.0" mnemonicParsing="false" onAction="#backToMain" prefHeight="17.0" prefWidth="211.0" text="Go Back to Main Screen" />
+        <VBox layoutX="26.0" layoutY="19.0" prefHeight="350.0" prefWidth="542.0" spacing="10.0">
+            <children>
+                <Label text="Categories">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                </Label>
+                <TableView fx:id="categoriesTable" prefHeight="157.0" prefWidth="542.0">
+                    <columns>
+                        <TableColumn fx:id="idCol" onEditCommit="#changeIdCellEvent" prefWidth="47.0" text="ID" />
+                        <TableColumn fx:id="responsiblePersonFirstNameCol" onEditCommit="#changeResponsiblePersonFirstNameCellEvent" prefWidth="83.0" text="Responsible person first name" />
+                        <TableColumn fx:id="responsiblePersonLastNameCol" onEditCommit="#changeResponsiblePersonLastNameCellEvent" prefWidth="75.0" text="Responsible person last name" />
+                        <TableColumn fx:id="nameCol" minWidth="0.0" onEditCommit="#changeNameCellEvent" prefWidth="84.0" text="Name" />
+                        <TableColumn fx:id="parentCategoryIdCol" minWidth="0.0" onEditCommit="#changeParentCategoryIdCellEvent" prefWidth="84.0" text="Parent category" />
+                    </columns>
+                </TableView>
+                <FlowPane prefHeight="80.0" prefWidth="542.0">
+                    <children>
+                        <TextField fx:id="idField" prefHeight="25.0" prefWidth="180.0" promptText="ID" />
+                        <TextField fx:id="responsiblePersonFirstNameField" prefHeight="25.0" prefWidth="180.0" promptText="Responsible person first name" />
+                        <TextField fx:id="responsiblePersonLastNameField" prefHeight="25.0" prefWidth="180.0" promptText="Responsible person last name" />
+                        <TextField fx:id="nameField" prefHeight="25.0" prefWidth="180.0" promptText="Name" />
+                        <TextField fx:id="parentCategoryIdField" prefHeight="25.0" prefWidth="180.0" promptText="Parent category" />
+                    </children>
+                </FlowPane>
+                <HBox prefHeight="0.0" prefWidth="542.0" spacing="10.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#addCategory" prefWidth="175.0" text="Add New Category" />
+                        <Button mnemonicParsing="false" onAction="#deleteCategory" prefWidth="175.0" text="Delete Category" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <Button fx:id="loadButton" layoutX="26.0" layoutY="394.0" mnemonicParsing="false" onAction="#loadData" text="Load data" />
+    </children>
+</AnchorPane>
