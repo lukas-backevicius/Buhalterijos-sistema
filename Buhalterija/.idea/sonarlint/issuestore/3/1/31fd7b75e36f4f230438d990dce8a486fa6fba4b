@@ -1,0 +1,87 @@
+
+k
+java:S2095Ÿ"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
+j
+java:S2095:"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
+j
+java:S2095{"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
+k
+java:S2095¸"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
+k
+java:S2095Ó"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
+k
+java:S2095ã"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
+k
+java:S2095°"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
+k
+java:S2095Ê"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
+f
+java:S2095ƒ"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¥ÊÀ˜
+k
+java:S2095Á"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
+k
+java:S2095¨"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
+k
+java:S2095ù"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
+J
+java:S1128"4Remove this unused import 'dataStructures.Employee'.(©˜âõ
+S	java:S106E"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
+Q
+java:S1854}"6Remove this useless assignment to local variable "rs".(’îÈÔÿÿÿÿÿ
+Q
+java:S1854{"6Remove this useless assignment to local variable "st".(™”Šûÿÿÿÿ
+N
+java:S1854z"9Remove this useless assignment to local variable "query".(İ¾}
+P
+java:S1854†"9Remove this useless assignment to local variable "alert".(øË¿
+S
+java:S1854"<Remove this useless assignment to local variable "queryUpd".(©Ê«×
+Y
+java:S1854"BRemove this useless assignment to local variable "personSelected".(®¹ˆå
+N	java:S106"9Replace this use of System.out or System.err by a logger.(šúí¼
+F
+java:S2695’"/This "PreparedStatement" only has 1 parameters.(£ıÎ¼
+T	java:S106—"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
+R
+java:S1854Ÿ"6Remove this useless assignment to local variable "st".(™”Šûÿÿÿÿ
+U
+java:S1854"9Remove this useless assignment to local variable "query".(¾Åè×ÿÿÿÿÿ
+Y
+java:S1854"BRemove this useless assignment to local variable "personSelected".(®¹ˆå
+R
+java:S1854¨"6Remove this useless assignment to local variable "st".(™”Šûÿÿÿÿ
+O
+java:S1854§"9Remove this useless assignment to local variable "query".(¢Ş±
+Y
+java:S1854¦"BRemove this useless assignment to local variable "personSelected".(®¹ˆå
+R
+java:S1854°"6Remove this useless assignment to local variable "st".(™”Šûÿÿÿÿ
+U
+java:S1854¯"9Remove this useless assignment to local variable "query".(ÌË°ßûÿÿÿÿ
+Y
+java:S1854®"BRemove this useless assignment to local variable "personSelected".(®¹ˆå
+R
+java:S1854¸"6Remove this useless assignment to local variable "st".(™”Šûÿÿÿÿ
+U
+java:S1854·"9Remove this useless assignment to local variable "query".(Üñ¯Øúÿÿÿÿ
+Y
+java:S1854¶"BRemove this useless assignment to local variable "personSelected".(®¹ˆå
+R
+java:S1854Á"6Remove this useless assignment to local variable "st".(™”Šûÿÿÿÿ
+U
+java:S1854À"9Remove this useless assignment to local variable "query".(ä±ÏÇûÿÿÿÿ
+Y
+java:S1854¿"BRemove this useless assignment to local variable "personSelected".(®¹ˆå
+R
+java:S1854Ê"6Remove this useless assignment to local variable "st".(™”Šûÿÿÿÿ
+P
+java:S1854É"9Remove this useless assignment to local variable "query".(¢ßÛÅ
+Y
+java:S1854È"BRemove this useless assignment to local variable "personSelected".(®¹ˆå
+R
+java:S1854Ó"6Remove this useless assignment to local variable "st".(™”Šûÿÿÿÿ
+U
+java:S1854Ò"9Remove this useless assignment to local variable "query".(ÀÒš©ûÿÿÿÿ
+Y
+java:S1854Ñ"BRemove this useless assignment to local variable "personSelected".(®¹ˆå
+?	java:S108ê")Either remove or fill this block of code.(‡ù“í
