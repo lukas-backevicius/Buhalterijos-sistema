@@ -214,6 +214,13 @@ public class ExpenseController {
             alert.setContentText("ID can't be null when adding new Expense!");
             alert.showAndWait();
         }
+        else if(amountField.getText().equals(""))
+        {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error adding new Expense");
+            alert.setContentText("Please input expenses");
+            alert.showAndWait();
+        }
         else {
             String query = "select id from expense where id = ?";
             PreparedStatement st = con.prepareStatement(query);
