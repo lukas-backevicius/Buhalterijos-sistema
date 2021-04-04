@@ -207,7 +207,7 @@ public class IncomeController {
         if(idField.getText().equals(""))
         {
             Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Error adding new Expense");
+            alert.setTitle("Error adding new income");
             alert.setHeaderText("Null ID");
             alert.setContentText("ID can't be null when adding new Income!");
             alert.showAndWait();
@@ -215,10 +215,11 @@ public class IncomeController {
         else if(amountField.getText().equals(""))
         {
             Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Error adding new Expense");
+            alert.setTitle("Error adding new income");
             alert.setContentText("Please input income");
             alert.showAndWait();
         }
+
         else {
             String query = "select id from income where id = ?";
             PreparedStatement st = con.prepareStatement(query);
