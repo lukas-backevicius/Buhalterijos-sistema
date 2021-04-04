@@ -189,19 +189,29 @@ public class ExpenseController {
 
     public void deleteExpense()
     {
-        ObservableList<Expense> selectedRows;
-
-        selectedRows = expensesTable.getSelectionModel().getSelectedItems();
-        try {
-            String query = "delete from expense where id = ?";
-            PreparedStatement st = con.prepareStatement(query);
-            for (Expense row : selectedRows) {
-                st.setString(1,row.getId());
-                st.executeUpdate();
-            }
-            loadData();
+        if(idField.getText().equals(""))
+        {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error deleting new expense");
+            alert.setHeaderText("Null ID");
+            alert.setContentText("Please input ID to delete expense");
+            alert.showAndWait();
         }
-        catch (Exception ignored) { }
+        else {
+            ObservableList<Expense> selectedRows;
+
+            selectedRows = expensesTable.getSelectionModel().getSelectedItems();
+            try {
+                String query = "delete from expense where id = ?";
+                PreparedStatement st = con.prepareStatement(query);
+                for (Expense row : selectedRows) {
+                    st.setString(1, row.getId());
+                    st.executeUpdate();
+                }
+                loadData();
+            } catch (Exception ignored) {
+            }
+        }
     }
 
 
