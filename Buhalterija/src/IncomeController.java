@@ -188,18 +188,28 @@ public class IncomeController {
 
     public void deleteIncome()
     {
-        ObservableList<Income> selectedRows;
-        selectedRows = incomesTable.getSelectionModel().getSelectedItems();
-        try {
-            String query = "delete from income where id = ?";
-            PreparedStatement st = con.prepareStatement(query);
-            for (Income row : selectedRows) {
-                st.setString(1,row.getId());
-                st.executeUpdate();
-            }
-            loadData();
+        if(idField.getText().equals(""))
+        {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error deleting new income");
+            alert.setHeaderText("Null ID");
+            alert.setContentText("Please input ID to delete income");
+            alert.showAndWait();
         }
-        catch (Exception ignored) { }
+        else {
+            ObservableList<Income> selectedRows;
+            selectedRows = incomesTable.getSelectionModel().getSelectedItems();
+            try {
+                String query = "delete from income where id = ?";
+                PreparedStatement st = con.prepareStatement(query);
+                for (Income row : selectedRows) {
+                    st.setString(1, row.getId());
+                    st.executeUpdate();
+                }
+                loadData();
+            } catch (Exception ignored) {
+            }
+        }
     }
 
 
