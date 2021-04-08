@@ -60,6 +60,8 @@ public class EmployeeController {
     private Button loadButton;
     @FXML
     private Button addNewEmployeeButton;
+    @FXML
+    private Button deleteEmployeeButton;
 
     private InvalidationListener changeListener;
 
@@ -96,6 +98,11 @@ public class EmployeeController {
         passField.setTextFormatter(noSpacesFormatter());
         phoneField.setTextFormatter(noSpacesFormatter());
         emailField.setTextFormatter(noSpacesFormatter());
+
+        deleteEmployeeButton.setDisable(true);
+        employeeTable.getSelectionModel().selectedItemProperty().addListener((obj) ->
+                deleteEmployeeButton.setDisable(obj == null)
+        );
     }
 
     private TextFormatter<String> pureTextFormatter() {
@@ -145,9 +152,7 @@ public class EmployeeController {
     }
 
     public void deleteEmployee() {
-        ObservableList<Employee> selectedRows;
-
-        selectedRows = employeeTable.getSelectionModel().getSelectedItems();
+        ObservableList<Employee> selectedRows = employeeTable.getSelectionModel().getSelectedItems();
 
         try {
             String query = "delete from employee where id = ?";

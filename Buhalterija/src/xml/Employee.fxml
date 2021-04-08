@@ -39,7 +39,7 @@
                 <HBox prefHeight="0.0" prefWidth="542.0" spacing="10.0">
                     <children>
                         <Button fx:id="addNewEmployeeButton" mnemonicParsing="false" onAction="#addEmployee" prefWidth="175.0" text="Add New Employee" />
-                        <Button mnemonicParsing="false" onAction="#deleteEmployee" prefWidth="175.0" text="Delete Employee" />
+                        <Button fx:id="deleteEmployeeButton" mnemonicParsing="false" onAction="#deleteEmployee" prefWidth="175.0" text="Delete Employee" />
                     </children>
                 </HBox>
             </children>
