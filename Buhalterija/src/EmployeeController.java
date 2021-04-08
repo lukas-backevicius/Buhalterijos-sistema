@@ -1,4 +1,5 @@
 import dataStructures.Employee;
+import javafx.beans.InvalidationListener;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -9,6 +10,7 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.stage.Stage;
+
 import java.io.IOException;
 import java.net.URL;
 import java.sql.Connection;
@@ -18,59 +20,101 @@ import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 public class EmployeeController {
-
-
-    @FXML private static ObservableList<Employee> dList = FXCollections.observableArrayList();
+    @FXML
+    private static ObservableList<Employee> dList = FXCollections.observableArrayList();
 
     private static Connection con;
 
-    @FXML private TableView<Employee> employeeTable;
-    @FXML private TableColumn<Employee, String> idCol;
-    @FXML private TableColumn<Employee, String> loginCol;
-    @FXML private TableColumn<Employee, String> passCol;
-    @FXML private TableColumn<Employee, String> firstNameCol;
-    @FXML private TableColumn<Employee, String> lastNameCol;
-    @FXML private TableColumn<Employee, String> phoneCol;
-    @FXML private TableColumn<Employee, String> emailCol;
-
-    @FXML private TextField idField;
-    @FXML private TextField loginField;
-    @FXML private TextField passField;
-    @FXML private TextField firstNameField;
-    @FXML private TextField lastNameField;
-    @FXML private TextField phoneField;
-    @FXML private TextField emailField;
-    @FXML private Button loadButton;
     @FXML
-    public static void initializeEmpoyee (Connection cn) throws IOException {
+    private TableView<Employee> employeeTable;
+    @FXML
+    private TableColumn<Employee, String> idCol;
+    @FXML
+    private TableColumn<Employee, String> loginCol;
+    @FXML
+    private TableColumn<Employee, String> passCol;
+    @FXML
+    private TableColumn<Employee, String> firstNameCol;
+    @FXML
+    private TableColumn<Employee, String> lastNameCol;
+    @FXML
+    private TableColumn<Employee, String> phoneCol;
+    @FXML
+    private TableColumn<Employee, String> emailCol;
+
+    @FXML
+    private TextField idField;
+    @FXML
+    private TextField loginField;
+    @FXML
+    private TextField passField;
+    @FXML
+    private TextField firstNameField;
+    @FXML
+    private TextField lastNameField;
+    @FXML
+    private TextField phoneField;
+    @FXML
+    private TextField emailField;
+    @FXML
+    private Button loadButton;
+    @FXML
+    private Button addNewEmployeeButton;
+
+    private InvalidationListener changeListener;
+
+
+    public boolean areAllFieldsFilled() {
+        return !(
+                idField.getText().equals("")
+                        || loginField.getText().equals("")
+                        || passField.getText().equals("")
+                        || firstNameField.getText().equals("")
+                        || lastNameField.getText().equals("")
+                        || phoneField.getText().equals("")
+                        || emailField.getText().equals("")
+        );
+    }
+
+    @FXML
+    public void initialize() {
+        addNewEmployeeButton.setDisable(!areAllFieldsFilled());
+        changeListener = (event) -> addNewEmployeeButton.setDisable(!areAllFieldsFilled());
+
+        idField.textProperty().addListener(changeListener);
+        loginField.textProperty().addListener(changeListener);
+        passField.textProperty().addListener(changeListener);
+        firstNameField.textProperty().addListener(changeListener);
+        lastNameField.textProperty().addListener(changeListener);
+        phoneField.textProperty().addListener(changeListener);
+        emailField.textProperty().addListener(changeListener);
+    }
+
+    @FXML
+    public static void initializeEmpoyee(Connection cn) throws IOException {
         con = cn;
         EmployeeController controller = new EmployeeController();
         controller.renderDisplay();
     }
 
 
-    public void loadFromDatabase()
-    {
+    public void loadFromDatabase() {
         try {
             String query = "select id, login, pass, firstName, lastName, phone, email from employee";
             PreparedStatement st = con.prepareStatement(query);
             ResultSet rs = st.executeQuery();
             dList.clear();
-            while (rs.next())
-            {
-                Employee emp = new Employee(rs.getString("login"),rs.getString("pass"),rs.getString("id"),rs.getString("firstName"),rs.getString("lastName"),rs.getString("phone"),rs.getString("email"));
-               dList.add(emp);
+            while (rs.next()) {
+                Employee emp = new Employee(rs.getString("login"), rs.getString("pass"), rs.getString("id"), rs.getString("firstName"), rs.getString("lastName"), rs.getString("phone"), rs.getString("email"));
+                dList.add(emp);
             }
-        }
-        catch (Exception e)
-        {
+        } catch (Exception e) {
             System.out.println(e);
         }
 
     }
 
-    public void deleteEmployee()
-    {
+    public void deleteEmployee() {
         ObservableList<Employee> selectedRows;
 
         selectedRows = employeeTable.getSelectionModel().getSelectedItems();
@@ -79,25 +123,23 @@ public class EmployeeController {
             String query = "delete from employee where id = ?";
             PreparedStatement st = con.prepareStatement(query);
             for (Employee employee : selectedRows) {
-                st.setString(1,employee.getId());
+                st.setString(1, employee.getId());
                 st.executeUpdate();
             }
             loadData();
+        } catch (Exception ignored) {
         }
-        catch (Exception ignored) { }
     }
 
 
     public void addEmployee() throws SQLException {
-        if(idField.getText().equals(""))
-        {
+        if (idField.getText().equals("")) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error adding new employee");
             alert.setHeaderText("Null ID");
             alert.setContentText("ID can't be null when adding new employee!");
             alert.showAndWait();
-        }
-        else {
+        } else {
             String query = "select id from employee where id = ?";
             PreparedStatement st = con.prepareStatement(query);
             st.setString(1, (idField.getText()));
@@ -112,7 +154,7 @@ public class EmployeeController {
                 st = con.prepareStatement(queryUpd);
                 st.setString(1, idField.getText());
                 st.setString(2, loginField.getText());
-                st.setString(3,  passField.getText());
+                st.setString(3, passField.getText());
                 st.setString(4, firstNameField.getText());
                 st.setString(5, lastNameField.getText());
                 st.setString(6, phoneField.getText());
@@ -126,8 +168,7 @@ public class EmployeeController {
                 lastNameField.setText("");
                 phoneField.setText("");
                 emailField.setText("");
-            }
-            else {
+            } else {
                 Alert alert = new Alert(Alert.AlertType.ERROR);
                 alert.setTitle("Error");
                 alert.setHeaderText("Duplicate ID");
@@ -137,8 +178,7 @@ public class EmployeeController {
         }
     }
 
-    public void loadData()
-    {
+    public void loadData() {
         loadFromDatabase();
         employeeTable.setEditable(true);
 
@@ -149,7 +189,7 @@ public class EmployeeController {
         lastNameCol.setCellFactory(TextFieldTableCell.forTableColumn());
         phoneCol.setCellFactory(TextFieldTableCell.forTableColumn());
         emailCol.setCellFactory(TextFieldTableCell.forTableColumn());
-        
+
 
         this.loadButton.setDisable(true);
         idCol.setCellValueFactory(new PropertyValueFactory<Employee, String>("id"));
@@ -191,15 +231,13 @@ public class EmployeeController {
             exists = true;
         }
 
-        if(exists)
-        {
+        if (exists) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");
             alert.setHeaderText("Duplicate ID");
             alert.setContentText("Another record with the same ID exists!");
             alert.showAndWait();
-        }
-        else {
+        } else {
             try {
                 Employee personSelected = employeeTable.getSelectionModel().getSelectedItem();
                 String queryUpd = "update employee set id = ? where id = ?";
@@ -208,15 +246,14 @@ public class EmployeeController {
                 st.setString(2, personSelected.getId());
                 st.executeUpdate();
                 loadFromDatabase();
-            }
-            catch (SQLException e ){
+            } catch (SQLException e) {
                 System.out.println(e);
             }
         }
     }
 
     public void changeLoginCellEvent(TableColumn.CellEditEvent<Employee, String> edittedCell) throws SQLException {
-        Employee personSelected =  employeeTable.getSelectionModel().getSelectedItem();
+        Employee personSelected = employeeTable.getSelectionModel().getSelectedItem();
         String query = "update employee set login = ? where id = ?";
         PreparedStatement st = con.prepareStatement(query);
         st.setString(1, edittedCell.getNewValue());
@@ -225,8 +262,7 @@ public class EmployeeController {
         loadFromDatabase();
     }
 
-    public void changePassCellEvent(TableColumn.CellEditEvent<Employee, String> edittedCell)
-    {
+    public void changePassCellEvent(TableColumn.CellEditEvent<Employee, String> edittedCell) {
         try {
             Employee personSelected = employeeTable.getSelectionModel().getSelectedItem();
             String query = "update employee set pass = ? where id = ?";
@@ -235,14 +271,12 @@ public class EmployeeController {
             st.setString(2, personSelected.getId());
             st.executeUpdate();
             loadFromDatabase();
-        }
-        catch (SQLException e ){
+        } catch (SQLException e) {
             System.out.println(e);
         }
     }
 
-    public void changeFirstNameCellEvent(TableColumn.CellEditEvent<Employee, String> edittedCell)
-    {
+    public void changeFirstNameCellEvent(TableColumn.CellEditEvent<Employee, String> edittedCell) {
         try {
             Employee personSelected = employeeTable.getSelectionModel().getSelectedItem();
             String query = "update employee set firstName = ? where id = ?";
@@ -251,14 +285,12 @@ public class EmployeeController {
             st.setString(2, personSelected.getId());
             st.executeUpdate();
             loadFromDatabase();
-        }
-        catch (SQLException e ){
+        } catch (SQLException e) {
             System.out.println(e);
         }
     }
 
-    public void changeLastNameCellEvent(TableColumn.CellEditEvent<Employee, String> edittedCell)
-    {
+    public void changeLastNameCellEvent(TableColumn.CellEditEvent<Employee, String> edittedCell) {
         try {
             Employee personSelected = employeeTable.getSelectionModel().getSelectedItem();
             String query = "update employee set lastName = ? where id = ?";
@@ -267,14 +299,12 @@ public class EmployeeController {
             st.setString(2, personSelected.getId());
             st.executeUpdate();
             loadFromDatabase();
-        }
-        catch (SQLException e ){
+        } catch (SQLException e) {
             System.out.println(e);
         }
     }
 
-    public void changePhoneCellEvent(TableColumn.CellEditEvent<Employee, String> edittedCell)
-    {
+    public void changePhoneCellEvent(TableColumn.CellEditEvent<Employee, String> edittedCell) {
         try {
             Employee personSelected = employeeTable.getSelectionModel().getSelectedItem();
             String query = "update employee set phone = ? where id = ?";
@@ -283,14 +313,12 @@ public class EmployeeController {
             st.setString(2, personSelected.getId());
             st.executeUpdate();
             loadFromDatabase();
-        }
-        catch (SQLException e ){
+        } catch (SQLException e) {
             System.out.println(e);
         }
     }
 
-    public void changeEmailCellEvent(TableColumn.CellEditEvent<Employee, String> edittedCell)
-    {
+    public void changeEmailCellEvent(TableColumn.CellEditEvent<Employee, String> edittedCell) {
         try {
             Employee personSelected = employeeTable.getSelectionModel().getSelectedItem();
             String query = "update employee set email = ? where id = ?";
@@ -299,16 +327,12 @@ public class EmployeeController {
             st.setString(2, personSelected.getId());
             st.executeUpdate();
             loadFromDatabase();
-        }
-        catch (SQLException e ){
+        } catch (SQLException e) {
             System.out.println(e);
         }
     }
 
-
-    public static ObservableList<Employee> getList(){
+    public static ObservableList<Employee> getList() {
         return dList;
     }
-
-
 }

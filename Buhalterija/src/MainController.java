@@ -27,42 +27,39 @@ public class MainController {
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection("jdbc:mysql://localhost/java", "root", "");
             System.out.println("Connected to database!");
-             }
-        catch (Exception e)
-             {
+        } catch (Exception e) {
             System.out.println("Couldn't connect to database!");
-             }
+        }
     }
 
     @FXML
-    private void toEmployee() throws IOException{
+    private void toEmployee() throws IOException {
         EmployeeController.initializeEmpoyee(con);
-
     }
 
     @FXML
-    private void toCompany() throws IOException{
+    private void toCompany() throws IOException {
         CompanyController.initializeCompany(con);
     }
 
     @FXML
-    private void toCategory() throws IOException{
+    private void toCategory() throws IOException {
         CategoryController.initializeCategory(con);
     }
 
     @FXML
-    private void toIncome() throws IOException{
+    private void toIncome() throws IOException {
         IncomeController.initializeIncome(con);
     }
 
     @FXML
-    private void toExpense() throws IOException{
+    private void toExpense() throws IOException {
         ExpenseController.initializeExpense(con);
     }
 
 
     @FXML
-    public void showAbout(){
+    public void showAbout() {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("About");
         alert.setHeaderText("About");
@@ -71,7 +68,7 @@ public class MainController {
     }
 
     @FXML
-    public void showEdit(){
+    public void showEdit() {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("About edit");
         alert.setHeaderText("How to edit?");
@@ -80,13 +77,11 @@ public class MainController {
     }
 
     @FXML
-    public void handleCloseButtonAction(ActionEvent event)  {
+    public void handleCloseButtonAction(ActionEvent event) {
         try {
             con.close();
             System.out.println("Connection to database closed!");
-        }
-        catch (SQLException e)
-        {
+        } catch (SQLException e) {
             System.out.println("Couldn't close connection to database!");
         }
 
@@ -95,7 +90,7 @@ public class MainController {
 
     }
 
-    public void readFile(){
+    public void readFile() {
         try {
             String current = "";
             String query;
@@ -164,13 +159,12 @@ public class MainController {
             myReader.close();
 
             if (alertType == 0) {
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("Success!");
-            alert.setHeaderText("Success!");
-            alert.setContentText("Data was successfully loaded!");
-            alert.showAndWait();
-            }
-            else {
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("Success!");
+                alert.setHeaderText("Success!");
+                alert.setContentText("Data was successfully loaded!");
+                alert.showAndWait();
+            } else {
                 Alert alert = new Alert(Alert.AlertType.ERROR);
                 alert.setTitle("Error!");
                 alert.setHeaderText("Error!");
@@ -194,14 +188,14 @@ public class MainController {
             ObservableList<Employee> darbList = EmployeeController.getList();
             ObservableList<Company> imList = CompanyController.getList();
 
-            for(Employee d : darbList) {
+            for (Employee d : darbList) {
                 myWriter.println(d.getLogin() + ";" + d.getPass() + ";" + d.getId() + ";" + d.getFirstName() + ";" + d.getLastName() + ";" + d.getPhone() + ";" + d.getEmail() + ";");
             }
 
             myWriter.println("category;");
 
-            for(Company i : imList) {
-                myWriter.println( i.getLogin() + ";" + i.getPass() + ";" + i.getId() + ";" + i.getName() + ";" + i.getAddress() + ";" + i.getPhone() + ";" + i.getLastName()+ ";" +  i.getEmail() + ";");
+            for (Company i : imList) {
+                myWriter.println(i.getLogin() + ";" + i.getPass() + ";" + i.getId() + ";" + i.getName() + ";" + i.getAddress() + ";" + i.getPhone() + ";" + i.getLastName() + ";" + i.getEmail() + ";");
             }
             myWriter.close();
             Alert alert = new Alert(Alert.AlertType.INFORMATION);

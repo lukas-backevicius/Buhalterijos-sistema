@@ -7,7 +7,6 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 @Data
-
 public class Category {
     private SimpleStringProperty id;
     private SimpleStringProperty responsiblePersonFirstName;
