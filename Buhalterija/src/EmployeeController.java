@@ -88,6 +88,36 @@ public class EmployeeController {
         lastNameField.textProperty().addListener(changeListener);
         phoneField.textProperty().addListener(changeListener);
         emailField.textProperty().addListener(changeListener);
+
+        firstNameField.setTextFormatter(pureTextFormatter());
+        lastNameField.setTextFormatter(pureTextFormatter());
+        idField.setTextFormatter(noSpacesFormatter());
+        loginField.setTextFormatter(noSpacesFormatter());
+        passField.setTextFormatter(noSpacesFormatter());
+        phoneField.setTextFormatter(noSpacesFormatter());
+        emailField.setTextFormatter(noSpacesFormatter());
+    }
+
+    private TextFormatter<String> pureTextFormatter() {
+        return new TextFormatter<>(change -> {
+            String text = change.getText();
+            if (text.matches("[0-9]+") || text.matches("\\s")) {
+                return null;
+            }
+
+            return change;
+        });
+    }
+
+    private TextFormatter<String> noSpacesFormatter() {
+        return new TextFormatter<>(change -> {
+            String text = change.getText();
+            if (text.matches("\\s")) {
+                return null;
+            }
+
+            return change;
+        });
     }
 
     @FXML
