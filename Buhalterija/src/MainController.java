@@ -22,17 +22,20 @@ public class MainController {
     @FXML
     public Button closeButton;
 
-    public static void connectDatabase() {
+    public static String connectDatabase() {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection("jdbc:mysql://localhost:3306/buhalterija", "buhalterija", "test");
             System.out.println("Connected to database!");
+            System.out.println(con.getCatalog());
+            return con.getCatalog();
              }
         catch (Exception e)
              {
                  System.out.println(e);
             System.out.println("Couldn't connect to database!");
              }
+        return "Error";
     }
 
     @FXML
