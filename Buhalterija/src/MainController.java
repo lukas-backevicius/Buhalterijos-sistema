@@ -25,11 +25,12 @@ public class MainController {
     public static void connectDatabase() {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost/java", "root", "");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/buhalterija", "buhalterija", "test");
             System.out.println("Connected to database!");
              }
         catch (Exception e)
              {
+                 System.out.println(e);
             System.out.println("Couldn't connect to database!");
              }
     }

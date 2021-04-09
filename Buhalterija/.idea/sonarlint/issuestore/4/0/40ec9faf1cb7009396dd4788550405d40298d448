@@ -1,25 +1,24 @@
 
-D
-java:S2115")Add password protection to this database.(›äéüÿÿÿÿ
-N	java:S106V"9Replace this use of System.out or System.err by a logger.(˜¡¸”
-S	java:S106!"9Replace this use of System.out or System.err by a logger.(§±¸…úÿÿÿÿ
-f
-java:S2095•"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ûá®ó
-f
-java:S2095Œ"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ûá®ó
-e
-java:S2095s"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ûá®ó
+N	java:S106W"9Replace this use of System.out or System.err by a logger.(˜¡¸”
+`
+java:S2095j"EUse try-with-resources or close this "Scanner" in a "finally" clause.(€–±äÿÿÿÿÿ
 N	java:S106"9Replace this use of System.out or System.err by a logger.(Ğ˜€õ
-N	java:S106Z"9Replace this use of System.out or System.err by a logger.(ÇéâÁ
+e
+java:S2095t"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ûá®ó
+f
+java:S2095–"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ûá®ó
 S
 java:S1128"=Remove this unused import 'javafx.collections.FXCollections'.(´¶²Æ
-`
-java:S2095i"EUse try-with-resources or close this "Scanner" in a "finally" clause.(€–±äÿÿÿÿÿ
-c
-java:S1192¯"GDefine a constant instead of duplicating this literal "Error!" 6 times.(Ô™¹Ğúÿÿÿÿ
-`
-java:S1192¨"IDefine a constant instead of duplicating this literal "Success!" 4 times.( –í¶
 h
-java:S3776b"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(»ôÎ“
+java:S3776c"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(»ôÎ“
+`
+java:S1192©"IDefine a constant instead of duplicating this literal "Success!" 4 times.( –í¶
 e
-java:S2095|"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ûá®ó
+java:S2095}"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ûá®ó
+c
+java:S1192°"GDefine a constant instead of duplicating this literal "Error!" 6 times.(Ô™¹Ğúÿÿÿÿ
+f
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ûá®ó
+S	java:S106""9Replace this use of System.out or System.err by a logger.(§±¸…úÿÿÿÿ
+N	java:S106["9Replace this use of System.out or System.err by a logger.(ÇéâÁ
+Z	java:S106!"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ8©ÛÇ™‹/

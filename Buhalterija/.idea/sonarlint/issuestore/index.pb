@@ -17,3 +17,7 @@ O
 src/dataStructures/Company.java,7\1\713e858bd65558bd7a3db13c855bb56983fe5480
 G
 src/MainController.java,4\0\40ec9faf1cb7009396dd4788550405d40298d448
+I
+src/IncomeController.java,a\a\aa0a344ebb19d962c02e283cd5e2ee645ec2c6fd
+P
+ src/dataStructures/Category.java,a\3\a3fd841aa6741a7ec7e25726fc14adcade0886a4

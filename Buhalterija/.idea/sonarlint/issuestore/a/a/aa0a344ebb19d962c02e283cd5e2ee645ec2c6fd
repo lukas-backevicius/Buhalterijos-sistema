@@ -1,0 +1,39 @@
+
+o
+java:S2293O"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ð­ÇÇ
+t
+java:S2293R"YReplace the type specification in this constructor call with the diamond operator ("<>").(¹¸ÿÑøÿÿÿÿ
+j
+java:S20953"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ž™”Šûÿÿÿÿ
+o
+java:S2293P"YReplace the type specification in this constructor call with the diamond operator ("<>").(«™­ÿ
+T	java:S106¶"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍþÿÿÿÿ
+t
+java:S2293Q"YReplace the type specification in this constructor call with the diamond operator ("<>").(îö“Šùÿÿÿÿ
+e
+java:S2095~"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¥ÊÀ˜
+k
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€ÒØýþÿÿÿÿ
+I
+java:S1128"3Remove this unused import 'dataStructures.Expense'.(¹ÄÝÅ
+k
+java:S2095¯"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€ÒØýþÿÿÿÿ
+?	java:S108Ê")Either remove or fill this block of code.(‡ù“í
+T	java:S106…"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍþÿÿÿÿ
+J
+java:S1128"4Remove this unused import 'dataStructures.Employee'.(©˜âõ
+j
+java:S2095j"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ž™”Šûÿÿÿÿ
+T	java:S106–"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍþÿÿÿÿ
+k
+java:S2095Ã"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ž™”Šûÿÿÿÿ
+k
+java:S2095Ÿ"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€ÒØýþÿÿÿÿ
+f
+java:S2095â"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¥ÊÀ˜
+k
+java:S2095Ù"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ž™”Šûÿÿÿÿ
+T	java:S106¦"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍþÿÿÿÿ
+S	java:S106>"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍþÿÿÿÿ
+O
+java:S1128"4Remove this unused import 'dataStructures.Category'.(œê»Îýÿÿÿÿ
