@@ -21,3 +21,9 @@ I
 src/IncomeController.java,a\a\aa0a344ebb19d962c02e283cd5e2ee645ec2c6fd
 P
  src/dataStructures/Category.java,a\3\a3fd841aa6741a7ec7e25726fc14adcade0886a4
+?
+Buhalterija.iml,7\f\7f83df7ac1a53bbc257a6227dc61fb1ec006d2df
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+_
+/.idea/libraries/mysql_connector_java_8_0_23.xml,9\5\95ea966f011ce81fd07075ab7f4eb676d64ef137
