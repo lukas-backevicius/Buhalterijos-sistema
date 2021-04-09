@@ -35,6 +35,7 @@ public class CategoryController {
     @FXML private TextField parentCategoryIdField;
 
     @FXML private Button loadButton;
+    @FXML private Button deleteButton;
 
     @FXML
     public static void initializeCategory (Connection cn) throws IOException {
@@ -64,7 +65,12 @@ public class CategoryController {
 
     }
 
-
+    @FXML
+    public void initialize(){
+        categoriesTable.getSelectionModel().selectedItemProperty().addListener((obj) ->
+                deleteButton.setDisable(obj == null)
+        );
+    }
 
     public void loadData()
     {
@@ -79,6 +85,7 @@ public class CategoryController {
         parentCategoryIdCol.setCellFactory(TextFieldTableCell.forTableColumn());
 
         this.loadButton.setDisable(true);
+        this.deleteButton.setDisable(true);
         idCol.setCellValueFactory(new PropertyValueFactory<Category, String>("id"));
         responsiblePersonFirstNameCol.setCellValueFactory(new PropertyValueFactory<Category, String>("responsiblePersonFirstName"));
         responsiblePersonLastNameCol.setCellValueFactory(new PropertyValueFactory<Category, String>("responsiblePersonLastName"));
@@ -104,7 +111,6 @@ public class CategoryController {
         mainStage.getScene().setRoot(window1);
 
     }
-
     public void changeIdCellEvent(TableColumn.CellEditEvent<Category, String> edittedCell) throws SQLException {
         String query = "select id from category where id = ?";
         PreparedStatement st = con.prepareStatement(query);
