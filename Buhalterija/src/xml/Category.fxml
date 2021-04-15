@@ -34,8 +34,8 @@
                 </FlowPane>
                 <HBox prefHeight="0.0" prefWidth="542.0" spacing="10.0">
                     <children>
-                        <Button mnemonicParsing="false" onAction="#addCategory" prefWidth="175.0" text="Add New Category" />
-                        <Button mnemonicParsing="false" onAction="#deleteCategory" prefWidth="175.0" text="Delete Category" />
+                        <Button fx:id="addButton" mnemonicParsing="false" onAction="#addCategory" disable="true" prefWidth="175.0" text="Add New Category" />
+                        <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#deleteCategory" disable="true" prefWidth="175.0" text="Delete Category" />
                     </children>
                 </HBox>
             </children>

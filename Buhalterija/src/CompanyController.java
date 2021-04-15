@@ -15,7 +15,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class CompanyController {
+public class CompanyController  {
 
     @FXML private static ObservableList<Company> dList = FXCollections.observableArrayList();
 
@@ -41,6 +41,8 @@ public class CompanyController {
     @FXML private TextField emailField;
 
     @FXML private Button loadButton;
+    @FXML private Button addButton;
+    @FXML private Button deleteButton;
 
 
     @FXML
@@ -87,8 +89,10 @@ public class CompanyController {
         phoneCol.setCellFactory(TextFieldTableCell.forTableColumn());
         emailCol.setCellFactory(TextFieldTableCell.forTableColumn());
 
-
         this.loadButton.setDisable(true);
+        this.deleteButton.setDisable(false);
+        this.addButton.setDisable(false);
+
         idCol.setCellValueFactory(new PropertyValueFactory<Company, String>("id"));
         loginCol.setCellValueFactory(new PropertyValueFactory<Company, String>("login"));
         passCol.setCellValueFactory(new PropertyValueFactory<Company, String>("pass"));

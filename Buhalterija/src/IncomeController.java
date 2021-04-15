@@ -36,7 +36,8 @@ public class IncomeController {
     @FXML private TextField amountField;
 
     @FXML private Button loadButton;
-
+    @FXML private Button addButton;
+    @FXML private Button deleteButton;
     @FXML
     public static void initializeIncome (Connection cn) throws IOException {
         con = cn;
@@ -76,6 +77,9 @@ public class IncomeController {
         amountCol.setCellFactory(TextFieldTableCell.forTableColumn());
 
         this.loadButton.setDisable(true);
+        this.deleteButton.setDisable(false);
+        this.addButton.setDisable(false);
+
         idCol.setCellValueFactory(new PropertyValueFactory<Income, String>("id"));
         categoryIdCol.setCellValueFactory(new PropertyValueFactory<Income, String>("categoryId"));
         howUsedCol.setCellValueFactory(new PropertyValueFactory<Income, String>("howUsed"));

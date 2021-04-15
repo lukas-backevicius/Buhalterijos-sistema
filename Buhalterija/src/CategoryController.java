@@ -35,7 +35,8 @@ public class CategoryController {
     @FXML private TextField parentCategoryIdField;
 
     @FXML private Button loadButton;
-
+    @FXML private Button addButton;
+    @FXML private Button deleteButton;
     @FXML
     public static void initializeCategory (Connection cn) throws IOException {
         con = cn;
@@ -79,6 +80,9 @@ public class CategoryController {
         parentCategoryIdCol.setCellFactory(TextFieldTableCell.forTableColumn());
 
         this.loadButton.setDisable(true);
+        this.deleteButton.setDisable(false);
+        this.addButton.setDisable(false);
+
         idCol.setCellValueFactory(new PropertyValueFactory<Category, String>("id"));
         responsiblePersonFirstNameCol.setCellValueFactory(new PropertyValueFactory<Category, String>("responsiblePersonFirstName"));
         responsiblePersonLastNameCol.setCellValueFactory(new PropertyValueFactory<Category, String>("responsiblePersonLastName"));

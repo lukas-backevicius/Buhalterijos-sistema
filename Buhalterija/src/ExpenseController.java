@@ -35,7 +35,8 @@ public class ExpenseController {
     @FXML private TextField amountField;
 
     @FXML private Button loadButton;
-
+    @FXML private Button addButton;
+    @FXML private Button deleteButton;
     @FXML
     public static void initializeExpense (Connection cn) throws IOException {
         con = cn;
@@ -77,6 +78,9 @@ public class ExpenseController {
         amountCol.setCellFactory(TextFieldTableCell.forTableColumn());
 
         this.loadButton.setDisable(true);
+        this.deleteButton.setDisable(false);
+        this.addButton.setDisable(false);
+
         idCol.setCellValueFactory(new PropertyValueFactory<Expense, String>("id"));
         categoryIdCol.setCellValueFactory(new PropertyValueFactory<Expense, String>("categoryId"));
         howAcquiredCol.setCellValueFactory(new PropertyValueFactory<Expense, String>("howAcquired"));

@@ -41,6 +41,8 @@ public class EmployeeController {
     @FXML private TextField phoneField;
     @FXML private TextField emailField;
     @FXML private Button loadButton;
+    @FXML private Button addButton;
+    @FXML private Button deleteButton;
     @FXML
     public static void initializeEmpoyee (Connection cn) throws IOException {
         con = cn;
@@ -152,6 +154,9 @@ public class EmployeeController {
         
 
         this.loadButton.setDisable(true);
+        this.deleteButton.setDisable(false);
+        this.addButton.setDisable(false);
+
         idCol.setCellValueFactory(new PropertyValueFactory<Employee, String>("id"));
         loginCol.setCellValueFactory(new PropertyValueFactory<Employee, String>("login"));
         passCol.setCellValueFactory(new PropertyValueFactory<Employee, String>("pass"));

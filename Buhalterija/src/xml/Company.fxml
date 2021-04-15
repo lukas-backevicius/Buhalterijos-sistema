@@ -40,8 +40,8 @@
                 </FlowPane>
                 <HBox prefHeight="0.0" prefWidth="542.0" spacing="10.0">
                     <children>
-                        <Button mnemonicParsing="false" onAction="#addCompany" prefWidth="175.0" text="Add New Company" />
-                        <Button mnemonicParsing="false" onAction="#deleteCompany" prefWidth="175.0" text="Delete Company" />
+                        <Button fx:id="addButton" mnemonicParsing="false" onAction="#addCompany" disable="true" prefWidth="175.0" text="Add New Company" />
+                        <Button fx:id="deleteButton" mnemonicParsing="false" disable="true" onAction="#deleteCompany" prefWidth="175.0" text="Delete Company" />
                     </children>
                 </HBox>
             </children>

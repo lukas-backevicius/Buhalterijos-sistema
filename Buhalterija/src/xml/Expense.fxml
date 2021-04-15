@@ -32,8 +32,8 @@
                 </FlowPane>
                 <HBox prefHeight="0.0" prefWidth="542.0" spacing="10.0">
                     <children>
-                        <Button mnemonicParsing="false" onAction="#addExpense" prefWidth="175.0" text="Add New Expense" />
-                        <Button mnemonicParsing="false" onAction="#deleteExpense" prefWidth="175.0" text="Delete Expense" />
+                        <Button fx:id="addButton" mnemonicParsing="false" onAction="#addExpense" disable="true" prefWidth="175.0" text="Add New Expense" />
+                        <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#deleteExpense" disable="true" prefWidth="175.0" text="Delete Expense" />
                     </children>
                 </HBox>
             </children>
