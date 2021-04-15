@@ -1,66 +1,42 @@
 
-k
-java:S2095Ã"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€ÒØışÿÿÿÿ
-k
-java:S2095î"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
-f
-java:S2095÷"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¥ÊÀ˜
 j
-java:S2095n"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
+java:S2095t"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
+{
+java:S2293Z"YReplace the type specification in this constructor call with the diamond operator ("<>").(–åŞåıÿÿÿÿ8¸¾Â³‹/
 k
-java:S2095³"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€ÒØışÿÿÿÿ
+java:S2095ô"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
+v
+java:S2293Y"YReplace the type specification in this constructor call with the diamond operator ("<>").(¼˜8¸¾Â³‹/
+T	java:S106 "9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
+?	java:S108å")Either remove or fill this block of code.(‡ù“í
 k
-java:S2095“"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€ÒØışÿÿÿÿ
+java:S2095™"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€ÒØışÿÿÿÿ
 k
-java:S2095£"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€ÒØışÿÿÿÿ
-k
-java:S2095Ø"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
-j
-java:S20953"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
+java:S2095©"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€ÒØışÿÿÿÿ
+N
+java:S1611F"1Remove the parentheses around the "obj" parameter(¢Ü8¡Øµ‹/
+T	java:S106À"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
+T	java:S106°"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
 J
 java:S1128"4Remove this unused import 'dataStructures.Employee'.(©˜âõ
-S	java:S106>"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
-Q
-java:S1854p"6Remove this useless assignment to local variable "rs".(’îÈÔÿÿÿÿÿ
-Q
-java:S1854n"6Remove this useless assignment to local variable "st".(™”Šûÿÿÿÿ
-O
-java:S1854m"9Remove this useless assignment to local variable "query".(ÆØ³ı
-O
-java:S1854x"9Remove this useless assignment to local variable "alert".(øË¿
-X
-java:S1854"<Remove this useless assignment to local variable "queryUpd".(ß§ÿøÿÿÿÿ
-[
-java:S1854€"DRemove this useless assignment to local variable "categorySelected".(¨İÔ‡
-F
-java:S2695„"/This "PreparedStatement" only has 1 parameters.(ÛáîÉ
-T	java:S106‰"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
-X
-java:S1854’"<Remove this useless assignment to local variable "queryUpd".(ÌåœÉøÿÿÿÿ
-X
-java:S1854‘"<Remove this useless assignment to local variable "selected".(„ñµøÿÿÿÿ
-R
-java:S1854“"6Remove this useless assignment to local variable "st".(€ÒØışÿÿÿÿ
-T	java:S106š"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
-X
-java:S1854¢"<Remove this useless assignment to local variable "queryUpd".(ÃËˆÒıÿÿÿÿ
-X
-java:S1854¡"<Remove this useless assignment to local variable "selected".(„ñµøÿÿÿÿ
-R
-java:S1854£"6Remove this useless assignment to local variable "st".(€ÒØışÿÿÿÿ
-T	java:S106ª"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
-X
-java:S1854²"<Remove this useless assignment to local variable "queryUpd".(‡—ŞŠøÿÿÿÿ
-X
-java:S1854±"<Remove this useless assignment to local variable "selected".(„ñµøÿÿÿÿ
-R
-java:S1854³"6Remove this useless assignment to local variable "st".(€ÒØışÿÿÿÿ
-T	java:S106º"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
-S
-java:S1854Â"<Remove this useless assignment to local variable "queryUpd".(œŞœ­
-X
-java:S1854Á"<Remove this useless assignment to local variable "selected".(„ñµøÿÿÿÿ
-R
-java:S1854Ã"6Remove this useless assignment to local variable "st".(€ÒØışÿÿÿÿ
-T	java:S106Ê"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
-?	java:S108ß")Either remove or fill this block of code.(‡ù“í
+k
+java:S2095¹"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€ÒØışÿÿÿÿ
+k
+java:S2095É"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€ÒØışÿÿÿÿ
+k
+java:S2095Ş"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
+j
+java:S20954"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
+v
+java:S2293]"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÂÁ¢ç8¸¾Â³‹/
+f
+java:S2095ı"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¥ÊÀ˜
+S	java:S106?"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
+v
+java:S2293\"YReplace the type specification in this constructor call with the diamond operator ("<>").(õüïø8¸¾Â³‹/
+v
+java:S2293["YReplace the type specification in this constructor call with the diamond operator ("<>").(ßÑ­8¸¾Â³‹/
+T	java:S106Ğ"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
+T	java:S106"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
+m
+java:S2095ˆ"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¥ÊÀ˜8¸¾Â³‹/

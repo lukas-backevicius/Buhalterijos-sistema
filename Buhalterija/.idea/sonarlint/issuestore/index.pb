@@ -27,3 +27,7 @@ S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
 _
 /.idea/libraries/mysql_connector_java_8_0_23.xml,9\5\95ea966f011ce81fd07075ab7f4eb676d64ef137
+A
+src/UnitTest.java,a\a\aa7adcbb9915f14e5f0a5db4abd937e7cc7c6c38
+E
+src/xml/Category.fxml,d\c\dc652665ad157ee6d57a0ae446f79e3264fe6ae6
