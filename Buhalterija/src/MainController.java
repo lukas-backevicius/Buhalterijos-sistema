@@ -95,6 +95,17 @@ public class MainController {
 
     }
 
+    public static String checkFile(String fileName)
+    {
+        try {
+            File myObj = new File(fileName);
+            Scanner myReader = new Scanner(myObj);
+        } catch (FileNotFoundException e) {
+            return "False";
+        }
+        return "True";
+    }
+
     public void readFile(){
         try {
             String current = "";
