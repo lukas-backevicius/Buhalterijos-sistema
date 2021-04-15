@@ -1,42 +1,42 @@
 
+T	java:S106°"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
+k
+java:S2095ô"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
+k
+java:S2095¹"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€ÒØışÿÿÿÿ
+f
+java:S2095ı"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¥ÊÀ˜
+m
+java:S2095ˆ"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¥ÊÀ˜8¸¾Â³‹/
+S	java:S106?"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
+j
+java:S20954"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
+T	java:S106À"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
+v
+java:S2293\"YReplace the type specification in this constructor call with the diamond operator ("<>").(õüïø8¸¾Â³‹/
+N
+java:S1611F"1Remove the parentheses around the "obj" parameter(¢Ü8¡Øµ‹/
+k
+java:S2095™"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€ÒØışÿÿÿÿ
 j
 java:S2095t"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
+T	java:S106 "9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
+k
+java:S2095É"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€ÒØışÿÿÿÿ
+J
+java:S1128"4Remove this unused import 'dataStructures.Employee'.(©˜âõ
 {
 java:S2293Z"YReplace the type specification in this constructor call with the diamond operator ("<>").(–åŞåıÿÿÿÿ8¸¾Â³‹/
 k
-java:S2095ô"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
-v
-java:S2293Y"YReplace the type specification in this constructor call with the diamond operator ("<>").(¼˜8¸¾Â³‹/
-T	java:S106 "9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
-?	java:S108å")Either remove or fill this block of code.(‡ù“í
-k
-java:S2095™"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€ÒØışÿÿÿÿ
-k
 java:S2095©"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€ÒØışÿÿÿÿ
-N
-java:S1611F"1Remove the parentheses around the "obj" parameter(¢Ü8¡Øµ‹/
-T	java:S106À"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
-T	java:S106°"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
-J
-java:S1128"4Remove this unused import 'dataStructures.Employee'.(©˜âõ
-k
-java:S2095¹"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€ÒØışÿÿÿÿ
-k
-java:S2095É"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€ÒØışÿÿÿÿ
-k
-java:S2095Ş"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
-j
-java:S20954"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
-v
-java:S2293]"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÂÁ¢ç8¸¾Â³‹/
-f
-java:S2095ı"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¥ÊÀ˜
-S	java:S106?"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
-v
-java:S2293\"YReplace the type specification in this constructor call with the diamond operator ("<>").(õüïø8¸¾Â³‹/
 v
 java:S2293["YReplace the type specification in this constructor call with the diamond operator ("<>").(ßÑ­8¸¾Â³‹/
-T	java:S106Ğ"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
+v
+java:S2293]"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÂÁ¢ç8¸¾Â³‹/
+v
+java:S2293Y"YReplace the type specification in this constructor call with the diamond operator ("<>").(¼˜8¸¾Â³‹/
 T	java:S106"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
-m
-java:S2095ˆ"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¥ÊÀ˜8¸¾Â³‹/
+?	java:S108å")Either remove or fill this block of code.(‡ù“í
+k
+java:S2095Ş"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
+T	java:S106Ğ"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
