@@ -15,7 +15,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class CategoryController {
+public class CategoryController  {
 
     @FXML private static ObservableList<Category> dList = FXCollections.observableArrayList();
 
