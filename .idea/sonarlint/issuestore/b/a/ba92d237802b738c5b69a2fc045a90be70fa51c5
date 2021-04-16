@@ -1,0 +1,31 @@
+
+k
+java:S2095Ã"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ž™”Šûÿÿÿÿ
+e
+java:S2095~"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¥ÊÀ˜
+j
+java:S20953"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ž™”Šûÿÿÿÿ
+k
+java:S2095¯"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€ÒØýþÿÿÿÿ
+k
+java:S2095Ù"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ž™”Šûÿÿÿÿ
+f
+java:S2095â"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¥ÊÀ˜
+j
+java:S2095j"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ž™”Šûÿÿÿÿ
+k
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€ÒØýþÿÿÿÿ
+k
+java:S2095Ÿ"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€ÒØýþÿÿÿÿ
+I
+java:S1128"3Remove this unused import 'dataStructures.Expense'.(¹ÄÝÅ
+O
+java:S1128"4Remove this unused import 'dataStructures.Category'.(œê»Îýÿÿÿÿ
+J
+java:S1128"4Remove this unused import 'dataStructures.Employee'.(©˜âõ
+S	java:S106>"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍþÿÿÿÿ
+T	java:S106…"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍþÿÿÿÿ
+T	java:S106–"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍþÿÿÿÿ
+T	java:S106¦"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍþÿÿÿÿ
+T	java:S106¶"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍþÿÿÿÿ
+?	java:S108Ê")Either remove or fill this block of code.(‡ù“í

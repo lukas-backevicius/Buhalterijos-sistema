@@ -1,0 +1,49 @@
+
+j
+java:S2095:"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
+k
+java:S2095Ó"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
+k
+java:S2095ù"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
+k
+java:S2095°"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
+k
+java:S2095ã"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
+T	java:S106—"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
+?	java:S108ê")Either remove or fill this block of code.(‡ù“í
+j
+java:S2095{"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
+f
+java:S2095ƒ"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¥ÊÀ˜
+k
+java:S2095Ê"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
+k
+java:S2095¨"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
+J
+java:S1128"4Remove this unused import 'dataStructures.Employee'.(©˜âõ
+k
+java:S2095¸"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(šúí¼
+k
+java:S2095Á"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
+k
+java:S2095Ÿ"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
+S	java:S106E"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
+m
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¥ÊÀ˜8Éß¢ç/
+v
+java:S2293\"YReplace the type specification in this constructor call with the diamond operator ("<>").(‡§œô8Éß¢ç/
+{
+java:S2293]"YReplace the type specification in this constructor call with the diamond operator ("<>").(å“õ±şÿÿÿÿ8Éß¢ç/
+v
+java:S2293^"YReplace the type specification in this constructor call with the diamond operator ("<>").(Î €¨8Éß¢ç/
+{
+java:S2293_"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ş Ö‘ùÿÿÿÿ8Éß¢ç/
+{
+java:S2293`"YReplace the type specification in this constructor call with the diamond operator ("<>").(Í¨Œóøÿÿÿÿ8Éß¢ç/
+v
+java:S2293a"YReplace the type specification in this constructor call with the diamond operator ("<>").(ˆÆ¸ 8Éß¢ç/
+u
+java:S2293b"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÍÙÎ!8Éß¢ç/
+{
+java:S2293c"YReplace the type specification in this constructor call with the diamond operator ("<>").(È·Àûÿÿÿÿÿ8Éß¢ç/
