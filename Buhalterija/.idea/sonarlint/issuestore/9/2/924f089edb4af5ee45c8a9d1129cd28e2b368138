@@ -1,9 +1,9 @@
 
 L
 java:S2696"6Make the enclosing method "static" or remove this set.(¾ÃÒ
-n
-java:S1104
-"XMake parentWindow a static final constant or non-public and provide accessors if needed.(Ÿš‰Æ
 H
 java:S1444
 "2Make this "public static parentWindow" field final(Ÿš‰Æ
+n
+java:S1104
+"XMake parentWindow a static final constant or non-public and provide accessors if needed.(Ÿš‰Æ

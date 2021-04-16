@@ -1,31 +1,61 @@
 
-k
-java:S2095Ã"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
-e
-java:S2095~"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¥ÊÀ˜
-j
-java:S20953"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
-k
-java:S2095¯"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€ÒØışÿÿÿÿ
-k
-java:S2095Ù"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
-f
-java:S2095â"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¥ÊÀ˜
 j
 java:S2095j"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
 k
-java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€ÒØışÿÿÿÿ
+java:S2095Ã"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
+T	java:S106–"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
+S	java:S106>"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
 k
-java:S2095Ÿ"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€ÒØışÿÿÿÿ
+java:S2095¯"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€ÒØışÿÿÿÿ
 I
 java:S1128"3Remove this unused import 'dataStructures.Expense'.(¹ÄİÅ
 O
 java:S1128"4Remove this unused import 'dataStructures.Category'.(œê»Îıÿÿÿÿ
 J
 java:S1128"4Remove this unused import 'dataStructures.Employee'.(©˜âõ
-S	java:S106>"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
-T	java:S106…"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
-T	java:S106–"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
+k
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€ÒØışÿÿÿÿ
+k
+java:S2095Ù"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
 T	java:S106¦"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
-T	java:S106¶"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
+k
+java:S2095Ÿ"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€ÒØışÿÿÿÿ
+f
+java:S2095â"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¥ÊÀ˜
 ?	java:S108Ê")Either remove or fill this block of code.(‡ù“í
+T	java:S106…"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
+T	java:S106¶"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ
+j
+java:S20953"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(™”Šûÿÿÿÿ
+X
+java:S1854l"6Remove this useless assignment to local variable "rs".(’îÈÔÿÿÿÿÿ8şÓÇç/
+X
+java:S1854j"6Remove this useless assignment to local variable "st".(™”Šûÿÿÿÿ8şÓÇç/
+V
+java:S1854i"9Remove this useless assignment to local variable "query".(³¶€š8şÓÇç/
+V
+java:S1854t"9Remove this useless assignment to local variable "alert".(øË¿8şÓÇç/
+Y
+java:S1854}"<Remove this useless assignment to local variable "queryUpd".(³³Š·8şÓÇç/
+Y
+java:S1854|"<Remove this useless assignment to local variable "selected".(¸…’İ8şÓÇç/
+L
+java:S2695€"/This "PreparedStatement" only has 1 parameters.(ØÄ±Q8şÓÇç/
+_
+java:S1854"<Remove this useless assignment to local variable "queryUpd".(Ê“Æ–şÿÿÿÿ8şÓÇç/
+Z
+java:S1854"<Remove this useless assignment to local variable "selected".(¸…’İ8şÓÇç/
+Y
+java:S1854"6Remove this useless assignment to local variable "st".(€ÒØışÿÿÿÿ8şÓÇç/
+Z
+java:S1854"<Remove this useless assignment to local variable "queryUpd".(Øâë8şÓÇç/
+Z
+java:S1854"<Remove this useless assignment to local variable "selected".(¸…’İ8şÓÇç/
+Y
+java:S1854Ÿ"6Remove this useless assignment to local variable "st".(€ÒØışÿÿÿÿ8şÓÇç/
+_
+java:S1854®"<Remove this useless assignment to local variable "queryUpd".(é—¥šüÿÿÿÿ8şÓÇç/
+Z
+java:S1854­"<Remove this useless assignment to local variable "selected".(¸…’İ8şÓÇç/
+Y
+java:S1854¯"6Remove this useless assignment to local variable "st".(€ÒØışÿÿÿÿ8şÓÇç/
